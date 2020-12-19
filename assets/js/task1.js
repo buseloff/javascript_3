@@ -36,11 +36,9 @@ userArray1 = new Array(lengthOfUserArray);
 function NumbersOfFibonacci(n) {
   return n <= 1 ? n : NumbersOfFibonacci(n - 1) + NumbersOfFibonacci(n - 2);
 }
-for (i = 0; i <= userArray1.length; i++) {
-  if (i == 0) {
-    continue;
-  }
-  userArray1[i - 1] = NumbersOfFibonacci(i);
+for (i = 0; i < userArray1.length; i++) {
+  
+  userArray1[i] = NumbersOfFibonacci(i);
 }
 
 console.log("Последовательность Фибoначчи = ", userArray1);
